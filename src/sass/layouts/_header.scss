@@ -1,0 +1,43 @@
+.header {
+    margin-top: 1rem;
+}
+
+.header__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang {
+    font-family: Source Sans Pro, sans-serif;
+    @include font(1.6rem, 2rem, 300);
+    color: $color-text;
+}
+
+.form-control {
+    border: none;
+    outline: none;
+    font-weight: normal;
+}
+
+.header__contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 41.8rem;
+    padding-bottom: 5rem;
+    & a {
+        @include font(1.4rem, 2rem);
+        letter-spacing: 0.03em;
+        color: $color-link;
+    }
+}
+
+.header__contact-item {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-around;
+}
+
+.logo {
+    padding-bottom: 2rem;
+}

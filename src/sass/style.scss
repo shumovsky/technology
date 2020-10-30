@@ -1,0 +1,21 @@
+// Normlze
+@import '../../node_modules/normalize-scss/sass/normalize';
+@include normalize();
+
+// Constants
+@import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholdes";
+
+
+// Base 
+@import "base/base";
+@import "base/buttons";
+
+
+// Layouts
+@import "layouts/header";
+
+// Components
+@import "components/navigation";
+@import "components/slider";

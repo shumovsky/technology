@@ -1,0 +1,17 @@
+button {
+    padding: 1.3rem 3.5rem;
+    color: $color-light;
+    background: $color-additional;
+    border-radius: 2px;
+    @include font(1.3rem, 1.3rem, bold);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-family: Commissioner, sans-serif;
+    cursor: pointer;
+    @extend %transition;
+    border: none;
+    &:hover {
+        color: $color-additional;
+        background: $color-light;
+    }
+}

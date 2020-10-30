@@ -1,0 +1,50 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    max-width: $page-width;
+    font-family: Lato, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+.wrapper {
+    max-width: $content-width;
+    margin: 0 auto;
+}
+
+h1 {
+    @include font(4rem, 5rem);
+    letter-spacing: 0.01em;
+    color: $color-primary;
+    font-family: Commissioner, sans-serif;
+}
+
+h2 {
+    @include font(2.8rem, 4rem);
+    letter-spacing: 0.03em;
+    color: $color-primary;
+    font-family: Commissioner, sans-serif;
+}
+
+h4 {
+    @include font(2.6rem, 4.5rem);
+    color: $color-primary;
+    font-family: Commissioner, sans-serif;
+}
+h5 {
+    @include font(2rem, 3rem);
+    color: $color-primary;
+    font-family: Commissioner, sans-serif;
+}
