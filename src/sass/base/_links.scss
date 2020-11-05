@@ -1,0 +1,8 @@
+.link {
+    @include font(1.2rem, 2rem, 600);
+    text-transform: uppercase;
+    color: $color-link;
+    &:hover {
+    color:    $color-text;
+    }
+}

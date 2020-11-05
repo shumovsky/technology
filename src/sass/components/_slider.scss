@@ -1,10 +1,8 @@
-.slider {
+.slider{
     position: relative;
-    // height: 65rem;
 }
 
 .slider__wrapper {
-    position: relative;
     height: 65rem;
 }
 
@@ -25,21 +23,8 @@
 }
 
 .slider__button {
-    // margin-bottom: 9rem;
-}
-
-.slider__arrow{
     position: absolute;
-    left: 3rem;
-    bottom: 7rem;
-    width: 10rem;
-    display: flex;
-    justify-content: space-between;
-    img {
-        width: 1.6rem;
-        height: auto;
-        cursor: pointer;
-    }
+    bottom: 27%;
 }
 
 
@@ -77,4 +62,95 @@
     background-repeat: no-repeat;
     background-size: cover;
  
+}
+
+
+.slick-track {
+    display: flex;
+}
+
+
+.slider .slick-arrow {
+    bottom: 15.5%;
+    &.slick-prev{
+        left: 21%;
+    }
+    &.slick-next {
+        right: 74%;
+    }
+}
+
+
+.direction__slider {
+    position: relative;
+    & .slick-list {
+        position: inherit;
+    top: 10rem; 
+    }
+}
+
+.direction__slider .slick-arrow {
+    top: 68%;
+    &.slick-prev{
+        left: -5%;
+    }
+    &.slick-next {
+        right: -5%;
+    }
+}
+
+.direction__slider .slick-list {
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+
+.review__slider{
+    position: relative;
+    & .slick-list {
+        overflow: hidden;
+        padding-bottom: 5rem;
+    }
+}
+
+.slick-dots {
+    display: flex;
+    width: 5rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+     li {
+        button {
+            font-size: 0;
+            padding: 0;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            border: none;
+            background: $color-additional;
+            outline: none;
+        }
+     }
+}
+.review__slider .slick-arrow {
+    bottom: 0;
+    &.slick-prev{
+        right: 10%;
+    }
+    &.slick-next {
+        right: 5%;
+    }
+}
+
+.dots-style {
+    font-size: 0;
+    padding: 0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+.button__review-slider {
+    position: relative;
+    bottom: 3rem;
+    margin-bottom: 10rem;
 }

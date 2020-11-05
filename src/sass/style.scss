@@ -11,11 +11,19 @@
 // Base 
 @import "base/base";
 @import "base/buttons";
+@import "base/links";
+@import "base/text";
 
 
 // Layouts
 @import "layouts/header";
+@import "layouts/promo";
+@import "layouts/review";
+@import "layouts/service";
+@import "layouts/protection";
+@import "layouts/advantage";
 
 // Components
 @import "components/navigation";
 @import "components/slider";
+@import "components/cards";

@@ -1,0 +1,34 @@
+.advantage {
+    background: $color-bg;
+    padding-top: 8rem;
+}
+
+.advantage__title {
+    margin: 0;
+}
+
+.advantage__main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.5rem;
+
+}
+
+.advantage__footer{
+    background: $color_light;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0; right: 0;
+        border-top: 80px solid $color-additional;
+        border-left: 80px solid transparent;
+        width: 0;
+    }
+}
+
+.advantage__footer_text{
+    padding: 4rem 0 4.5rem 5rem;
+    text-align: left;
+    width: 74rem;
+}

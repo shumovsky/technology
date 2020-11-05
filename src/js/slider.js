@@ -1,31 +1,17 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+$(document).ready(function () {
+    $('.slider').slick();
+})
 
-function nextSlide() {
-    showSlides(slideIndex += 1);
-}
+$(document).ready(function () {
+    $('.direction__slider').slick();
+})
 
-function previousSlide() {
-    showSlides(slideIndex -= 1);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName('slider__item');
-
-    if (n > slides.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-
-    for (let slide of slides) {
-        slide.style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";
-}
+// $(document).ready(function () {
+//     $('.review__slider').slick();
+// })
+$('.review__slider').slick({
+    dots: true,
+    infinite: true,
+    arrows: true,
+    slidesToShow: 1,
+});

@@ -1,0 +1,62 @@
+
+.card{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: $content-width;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    img {
+        padding: 3rem;
+    border:3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    margin: 5rem 5.5rem 2.5rem;
+    }
+}
+
+.card__item {
+    // flex-basis: 20%;
+    background: $color-light;
+}
+
+.card__text {
+    @include font(1.6rem, 2.5rem);
+    max-width: 230px;
+    margin: 0 auto;
+    letter-spacing: 0.02em;
+    color:$color-title ;
+    padding-bottom: 4rem;
+}
+
+// Advantage cards
+
+.advantage__card {
+    flex-basis: 23%;
+    text-align: center;
+    background: $color-light;
+    margin-bottom: 4rem;
+}
+.advantage__card_img{
+    position: relative;
+    margin: 8rem 0 5.5rem;
+    &:before{
+        display: block;
+        width: 12rem;
+        height: 12rem;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);  
+    }
+}
+
+.advantage__card_text {
+    @include font(1.6rem, 2.5rem);
+    letter-spacing: 0.02em;
+    color: $color-title;
+    padding: 0 2rem 4rem 2rem;
+}
