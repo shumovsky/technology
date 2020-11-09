@@ -645,16 +645,16 @@
           <div class="cooperations">
             <div class="cooperations__content">
               <h2 class="cooperations__title">Организация сотрудничества</h2>
-              <div>
+              <div class="cooperations__list">
                 <div><img src="./src/img/ather/number1.png" alt="" /></div>
-                <div>
+                <div class="text">
                   Установив контакт с нашим сотрудником, Вы оговорите нюансы
                   предмета обсуждения и согласуете личную встречу.
                 </div>
               </div>
-              <div>
+              <div class="cooperations__list">
                 <div><img src="./src/img/ather/number2.png" alt="" /></div>
-                <div>
+                <div class="text">
                   Юрист изучит документы, необходимые для разработки стратегии
                   решения возникшей ситуации. И заключит договор.
                 </div>
@@ -665,17 +665,32 @@
                 современные средства связи и мессенджеры.
               </div>
             </div>
-            <div class="cooperations__form"></div>
+            <div class="cooperations__form">
+              <form class="contact-form" id="contact-form" method="POST" enctype="multipart/form-data">
+                <p class="contact-form__title">Ваше имя</p>
+                <div class="contact-form__input-wrapper">
+                  <input name="name" type="text" class="contact-form__input contact-form__input_name" placeholder="Ваше имя">
+                  <div class="contact-form__error contact-form__error_name"></div>
+                </div>
+                      <p class="contact-form__title">Телефон для связи</p>     
+                <div class="contact-form__input-wrapper">
+                  <input name="tel" type="tel" class="contact-form__input contact-form__input_tel" placeholder="+375 (XX) XXX-XX-XX">
+                  <div class="contact-form__error contact-form__error_tel"></div>
+                </div>
+               <p class="form__description">Нажимая на кнопку «Получить консультацию», вы соглашаетесь с условиями <a class="form__description_link" href="#">Политики конфиденциальности</a> Политики конфиденциальности</p>
+                <button class="contact-form__button button" type="submit"> Получить консультацию </button>
+              </form>
+            </div>
           </div>
           <div class="price">
             <h2 class="price__title">Стоимость юридических услуг в Минске</h2>
-            <p class="price__text">
+            <p class="text">
               Стоимость услуг формируется согласно тарифам, установленным в
               компании и в зависимости от времени, затраченного юристом на
               разрешение возникшей ситуации. Принцип прозрачности делает наши
               цены обоснованными и понятными для клиента.
             </p>
-            <button class="button">Тарифы</button>
+            <button class="button price__button">Тарифы</button>
           </div>
         </div>
       </section>
@@ -685,10 +700,10 @@
       <section class="contact">
         <div class="wrapper contact__wrapper">
           <div>
-            <h5>ООО “МК-ПРАВОВЫЕ ТЕХНОЛОГИИ”</h5>
-            <p>УНП <span>192710862</span></p>
-            <p>Наш рейтинг <span>5 из 5 (15 отзывов)</span></p>
-            <ul>
+            <h5 class="contact__name">ООО “МК-ПРАВОВЫЕ ТЕХНОЛОГИИ”</h5>
+            <p class="contact__name_info">УНП <span>192710862</span></p>
+            <p class="contact__name_info">Наш рейтинг <span>5 из 5 (15 отзывов)</span></p>
+            <ul class="contact__info_list">
               <li>
                 <a href=""><img src="./src/img/social-link/vk.png" alt="" /></a>
               </li>
@@ -718,56 +733,56 @@
             </ul>
           </div>
           <div class="our__office">
-            <p>Наши офисы</p>
+            <div class="our__office_title text">Наши офисы</div>
             <div class="contact__info">
               <p class="contact__city">Контакты в Минске</p>
               <ul>
                 <li>
-                  <a href="tel:+375 (44) 755-01-01">+375 (44) 755-01-01</a>
+                  <a class="contact__link_tel" href="tel:+375 (44) 755-01-01">+375 (44) 755-01-01</a>
                 </li>
                 <li>
-                  <a href="tel:+375 (29) 550-01-01">+375 (29) 550-01-01</a>
+                  <a class="contact__link_tel" href="tel:+375 (29) 550-01-01">+375 (29) 550-01-01</a>
                 </li>
                 <li>
-                  <a href="tel:+375 (17) 374-40-60">+375 (17) 374-40-60</a>
+                  <a class="contact__link_tel" href="tel:+375 (17) 374-40-60">+375 (17) 374-40-60</a>
                 </li>
               </ul>
-              <p class="contact__adress">Адрес</p>
-              <p>г. Минск, ул. Широкая, д. 3, пом. 146, оф. 4</p>
-              <p>Телефон для связи резидентов Российской Федерации</p>
-              <p>
-                whatsapp <a href="tel:+7 (989) 166 24 00">+7 (989) 166 24 00</a>
+              <p class="contact__subtitle">Адрес</p>
+              <p class="contact__text">г. Минск, ул. Широкая, д. 3, пом. 146, оф. 4</p>
+              <p class="contact__subtitle">Телефон для связи резидентов Российской Федерации</p>
+              <p class="contact__link_tel" >
+                whatsapp <a class="contact__link_tel"  href="tel:+7 (989) 166 24 00">+7 (989) 166 24 00</a>
               </p>
               <p>
-                <a href="mailto:info@jurisprudent.by"></a>info@jurisprudent.by
+                <a class="contact__link_mail" href="mailto:info@jurisprudent.by">info@jurisprudent.by</a>
               </p>
             </div>
             <div class="contact__info">
               <div>
-                <p class="contact__sity">Отдел в Могилеве</p>
-                <p class="contact__adress">Адрес</p>
-                <p>г. Могилев, ул. Космонавтов, д. 19, оф. 507</p>
+                <p class="contact__city">Отдел в Могилеве</p>
+                <p class="contact__subtitle">Адрес</p>
+                <p class="contact__text">г. Могилев, ул. Космонавтов, д. 19, оф. 507</p>
                 <p>
-                  <a href="mailto:mogilev@jurisprudent.by"></a
-                  >mogilev@jurisprudent.by
+                  <a class="contact__link_mail" href="mailto:mogilev@jurisprudent.by">mogilev@jurisprudent.by</a
+                  >
                 </p>
               </div>
               <div>
-                <p class="contact__sity">Отдел в Бресте</p>
-                <p class="contact__adress">Адрес</p>
-                <p>г. Брест, б-р Шевченко, д. 4, оф. 401</p>
+                <p class="contact__city">Отдел в Бресте</p>
+                <p class="contact__subtitle">Адрес</p>
+                <p class="contact__text">г. Брест, б-р Шевченко, д. 4, оф. 401</p>
                 <p>
-                  <a href="mailto:brest@jurisprudent.by"
+                  <a class="contact__link_mail" href="mailto:brest@jurisprudent.by"
                     >brest@jurisprudent.by</a
                   >
                 </p>
               </div>
               <div>
-                <p class="contact__sity">Отдел в Витебске</p>
-                <p class="contact__adress">Адрес</p>
-                <p>г. Витебск, ул.Гоголя, д. 14, оф. 614</p>
+                <p class="contact__city">Отдел в Витебске</p>
+                <p class="contact__subtitle">Адрес</p>
+                <p class="contact__text">г. Витебск, ул.Гоголя, д. 14, оф. 614</p>
                 <p>
-                  <a href="mailto:vitebsk@jurisprudent.by"
+                  <a class="contact__link_mail" href="mailto:vitebsk@jurisprudent.by"
                     >vitebsk@jurisprudent.by</a
                   >
                 </p>
@@ -775,44 +790,45 @@
             </div>
             <div class="contact__info">
               <div>
-                <p class="contact__sity">Отдел в Гродно</p>
-                <p class="contact__adress">Адрес</p>
-                <p>г. Гродно, ул. Карла Маркса, д. 31-1, оф. 1010</p>
+                <p class="contact__city">Отдел в Гродно</p>
+                <p class="contact__subtitle">Адрес</p>
+                <p class="contact__text">г. Гродно, ул. Карла Маркса, д. 31-1, оф. 1010</p>
                 <p>
-                  <a href="mailto:grodno@jurisprudent.by"
+                  <a class="contact__link_mail" href="mailto:grodno@jurisprudent.by"
                     >grodno@jurisprudent.by</a
                   >
                 </p>
               </div>
               <div>
-                <p class="contact__sity">Отдел в Гомеле</p>
-                <p class="contact__adress">Адрес</p>
-                <p>г. Гомель, пр. Ленина, д. 10, оф. 901</p>
+                <p class="contact__city">Отдел в Гомеле</p>
+                <p class="contact__subtitle">Адрес</p>
+                <p class="contact__text">г. Гомель, пр. Ленина, д. 10, оф. 901</p>
                 <p>
-                  <a href="mailto:gomel@jurisprudent.by"
+                  <a class="contact__link_mail" href="mailto:gomel@jurisprudent.by"
                     >gomel@jurisprudent.by</a
                   >
                 </p>
               </div>
             </div>
           </div>
-          <div class="work__time">
-            <p>Время работы</p>
+          <div>
+            <div class="work__time text">Время работы</div>            
             <div>
-              <p class="work__time-title">Прием посетителей</p>
-              <p class="work__time-text">
+              <p class="contact__subtitle">Прием посетителей</p>
+              <p class="contact__text">
                 Ежедневно с 8.00 до 19.00 Выходной: суббота - воскресенье.
               </p>
             </div>
             <div>
-              <p class="work__time-title">Прием звонков</p>
-              <p class="work__time-text">
+              <p class="contact__subtitle">Прием звонков</p>
+              <p class="contact__text">
                 Ежедневно с 8.00 до 22.00 Без выходных
               </p>
             </div>
             <div>
-              <p class="work__time-title">Онлайн консультант</p>
-              <p class="work__time-text">Круглосуточно 24/7 Без выходных</p>
+              <p class="contact__subtitle">Онлайн консультант</p>
+              <p class="contact__text">Круглосуточно 24/7</p>
+              <p class="contact__text"> Без выходных</p>
             </div>
           </div>
         </div>

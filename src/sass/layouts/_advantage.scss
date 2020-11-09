@@ -1,6 +1,7 @@
 .advantage {
     background: $color-bg;
     padding-top: 8rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .advantage__title {
@@ -31,4 +32,96 @@
     padding: 4rem 0 4.5rem 5rem;
     text-align: left;
     width: 74rem;
+}
+
+.cooperations {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+   
+}
+
+.cooperations__content {
+    flex-basis: 42.7%;
+}
+
+.cooperations__form{
+    flex-basis: 48.7%;
+    background: $color-light;
+}
+
+.cooperations__list {
+    display: flex;
+    padding-bottom: 3rem;
+    img {
+        padding-right: 3rem;
+    }
+}
+
+.cooperation__content__footer {
+    @include font(1.4rem, 2.5rem, 300);
+    letter-spacing: 0.01em;
+    color: $color-text;
+}
+
+.contact-form {
+   padding: 4rem 5rem 0 5rem;
+   input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    margin-bottom: 2rem;
+   }
+   input:focus {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+   }
+   input::placeholder {
+    @include font(1.5rem, 2.5rem, 300);
+    opacity: 0.6;
+    color: $color-link;
+   }
+   
+}
+
+.contact-form__input {
+    padding: 0 0 .4rem 1rem;
+    @include font(1.5rem, 2.5rem, 500);
+    color: $color-text;
+}
+
+.contact-form__title {
+    font-family: "Commissioner", sans-serif;
+    @include font(1.3rem, 2rem, 500);
+    letter-spacing: 0.01em;
+    color: $color-link;
+}
+
+.form__description {
+    @include font(1.3rem, 2rem, 300);
+    line-height: 20px;
+    color: $color-link;
+}
+
+.form__description_link {
+    color: $color-link;
+    font-weight: 600;
+}
+
+.contact-form__button {
+    width: 100%;
+}
+
+.price {
+    max-width: 67rem;
+   padding-bottom: 10rem;
+}
+
+.price__title {
+    padding-bottom: 3rem;
+}
+
+.price__button {
+    margin-top: 3rem;
+    width: 20rem;
 }

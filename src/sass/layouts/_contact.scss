@@ -1,0 +1,86 @@
+.contact {
+    padding-top: 5rem;
+    background: $color-bg;
+}
+
+.contact__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__name {
+    padding-bottom: 7rem;
+}
+
+.contact__name_info {
+    font-family: "Commissioner", sans-serif;
+    @include font(1.3rem, 2rem, 700);
+    letter-spacing: 0.01em;
+    color: $color-link;
+    span {
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+    }
+}
+
+.contact__info_list {
+margin-top: 6rem;
+padding: 0; 
+    display: flex;
+    justify-content: space-between;
+    width: 25.5rem;
+}
+
+.our__office{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 3rem;
+    ul{
+        padding: 0;
+    }
+}
+
+.contact__city{
+    font-family: "Commissioner", sans-serif;
+    @include font(1.4rem, 2.5rem);
+    letter-spacing: 0.04em;
+    color: $color-title;
+}
+
+.contact__link_tel {
+    @include font(1.3rem, 2rem, 300);
+    color: $color-text;
+}
+
+.contact__link_mail{
+    font-family: "Commissioner", sans-serif;
+    @include font(1.3rem, 2rem, 700);
+    color: $color-text;
+}
+
+.contact__subtitle {
+    font-family: "Commissioner", sans-serif;
+    @include font(1.3rem, 2rem, 700);
+    color: $color-title;
+}
+
+.our__office_title {
+    flex-basis: 100%;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.work__time{
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact__info{
+    flex-basis: 30%;
+}
+
+.contact__text {
+    @include font(1.3rem, 2rem, 300);
+    color: $color-text;
+}
